@@ -20,6 +20,16 @@ target_include_directories(abstract_factory
 )
 
 set(SOURCE
+    builder/builder.cc
+    builder/maze_game.cc
+)
+add_executable(builder ${SOURCE})
+target_include_directories(builder
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/builder
+)
+
+set(SOURCE
     factory_method/maze_game.cc
 )
 add_executable(factory_method ${SOURCE})
