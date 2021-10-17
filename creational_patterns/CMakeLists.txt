@@ -28,3 +28,12 @@ target_include_directories(factory_method
     PRIVATE
         ${PROJECT_SOURCE_DIR}/factory_method
 )
+
+set(SOURCE
+    singleton/singleton.cc
+)
+add_executable(singleton ${SOURCE})
+target_include_directories(singleton
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/singleton
+)
