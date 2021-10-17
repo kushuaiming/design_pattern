@@ -1,5 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
-project(design_pattern)
+project(creational_patterns)
 
 set(SOURCE
     primer_program/maze_game.cc
