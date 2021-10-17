@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "maze_game.h"
 
 Maze* MazeGame::CreateMaze() {
@@ -10,14 +12,19 @@ Maze* MazeGame::CreateMaze() {
   aMaze->AddRoom(r2);
 
   r1->SetSide(North, new Wall);
-  r1->SetSide(East, new Wall);
+  r1->SetSide(East, theDoor);
   r1->SetSide(South, new Wall);
   r1->SetSide(West, new Wall);
 
   r2->SetSide(North, new Wall);
   r2->SetSide(East, new Wall);
   r2->SetSide(South, new Wall);
-  r2->SetSide(West, new Wall);
+  r2->SetSide(West, theDoor);
 
   return aMaze;
+}
+
+int main(int argc, char* argv[]) {
+  std::cout << "start programming." << std::endl;
+  return 0;
 }
