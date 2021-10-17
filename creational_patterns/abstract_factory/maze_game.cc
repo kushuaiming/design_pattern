@@ -26,5 +26,8 @@ Maze* MazeGame::CreateMaze(MazeFactory& factory) {
 
 int main(int argc, char* argv[]) {
   std::cout << "start programming." << std::endl;
+  MazeGame game;
+  BombedMazeFactory factory;
+  game.CreateMaze(factory);
   return 0;
 }

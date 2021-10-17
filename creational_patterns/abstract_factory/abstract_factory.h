@@ -1,7 +1,7 @@
 #include "map_site.h"
 class MazeFactory {
  public:
-  MazeFactory();
+  MazeFactory() = default;
   virtual Maze* MakeMaze() const { return new Maze; }
   virtual Wall* MakeWall() const { return new Wall; }
   virtual Room* MakeRoom(int n) const { return new Room(n); }

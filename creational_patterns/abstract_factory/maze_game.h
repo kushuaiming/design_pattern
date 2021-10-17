@@ -6,7 +6,7 @@
 
 class MazeGame {
  public:
-  MazeGame();
+  MazeGame() = default;
 
   // abstract factory
   Maze* CreateMaze(MazeFactory& factory);
