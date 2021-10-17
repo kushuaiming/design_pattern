@@ -19,3 +19,12 @@ target_include_directories(abstract_factory
     PRIVATE
         ${PROJECT_SOURCE_DIR}/abstract_factory
 )
+
+set(SOURCE
+    factory_method/maze_game.cc
+)
+add_executable(factory_method ${SOURCE})
+target_include_directories(factory_method
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/factory_method
+)
