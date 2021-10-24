@@ -39,17 +39,6 @@ target_include_directories(factory_method
 )
 
 set(SOURCE
-    prototype/maze_game.cc
-    prototype/prototype.cc
-    prototype/map_site.cc
-)
-add_executable(prototype ${SOURCE})
-target_include_directories(prototype
-    PRIVATE
-        ${PROJECT_SOURCE_DIR}/prototype
-)
-
-set(SOURCE
     singleton/singleton.cc
 )
 add_executable(singleton ${SOURCE})
