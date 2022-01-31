@@ -1,5 +1,3 @@
-#include <list>
-
 template <class Item>
 class List {
  public:
