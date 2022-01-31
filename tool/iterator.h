@@ -1,6 +1,4 @@
-#include <iterator>
-
-#include <"list.h">
+#include "list.h"
 
 template <class Item>
 class Iterator {
@@ -23,4 +21,8 @@ class ListIterator : public Iterator<Item> {
   virtual void Next();
   virtual bool IsDone() const;
   virtual Item CurrentItem() const;
+
+ private:
+  const List<Item>* _list;
+  long _current;
 };
