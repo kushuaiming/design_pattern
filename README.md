@@ -1,1 +1,7 @@
-# design_pattern
+# How to compile
+```
+mkdir build
+cd build
+cmake ..
+make -j8
+```
