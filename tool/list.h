@@ -1,4 +1,11 @@
 template <class Item>
+class ListNode {
+ private:
+  ListNode<Item>* next_node_;
+  ListNode<Item>* prev_node_;
+};
+
+template <class Item>
 class List {
  public:
   List(long size = DEFAULT_LIST_CAPACITY);
